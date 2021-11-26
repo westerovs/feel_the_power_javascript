@@ -97,20 +97,21 @@ body {
     opacity: 0;
 }
 
-@keyframes r1 {
-    100% {
-        transform: translate(-50%, -50%) rotate(360deg);
-    }
-}
 
-@keyframes r2 {
-    100% {
-        transform: translate(-50%, -50%) rotate(-360deg);
-    }
-}
+/*@keyframes r1 {*/
+/*    100% {*/
+/*        transform: translate(-50%, -50%) rotate(360deg);*/
+/*    }*/
+/*}*/
 
-@keyframes r3 {
-    100% {
-        transform: translate(-50%, -50%) rotate(360deg);
-    }
-}
+/*@keyframes r2 {*/
+/*    100% {*/
+/*        transform: translate(-50%, -50%) rotate(-50deg);*/
+/*    }*/
+/*}*/
+
+/*@keyframes r3 {*/
+/*    100% {*/
+/*        transform: translate(-50%, -50%) rotate(360deg);*/
+/*    }*/
+/*}*/
