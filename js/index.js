@@ -65,22 +65,22 @@ const createColorBox = () => {
   
   for (let i = 0; i <= partsItems.length - 1; i++) {
     setTimeout(() => {
-      
+  
       for (let j = 0; j < parts.length; j++) {
         parts[i].style.outline = '1px solid red'
       }
-      
+  
       if (i >= partsItems.length - 1) {
         for (let k = i; k >= 0; k--) {
           setTimeout(() => {
             console.warn(k)
+            parts[k].style.outline = '1px solid white'
+  
             partsItems[k].style.backgroundImage = 'linear-gradient(140deg, white, rgba(110, 110, 110, 0.5)'
             partsItems[k].style.borderRadius = '0%'
           }, 100 * k)
-          
         }
       }
-    
       
       if (i < textLength) {
           partsItems[i].innerHTML = text[i]
@@ -88,6 +88,7 @@ const createColorBox = () => {
       
       partsItems[i].style.backgroundImage = 'linear-gradient(140deg, red, rgba(0, 0, 0, 0.5)'
       partsItems[i].style.borderRadius = '50%'
+      partsItems[i].style.opacity = '1'
     }, 100 * i)
   }
   
